@@ -74,6 +74,12 @@ void keyPressed() {
   if (keyCode == DOWN) downKey = true;
   if (keyCode == LEFT) leftKey = true;
   if (keyCode == RIGHT) rightKey = true;
+  
+  if (mode == INTRO && key == ' ') {
+     yellowClicks = 0;
+     blueClicks = 0;
+     mode = GAME;
+  }
 }
 
 void keyReleased() {
